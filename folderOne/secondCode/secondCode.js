@@ -1,38 +1,39 @@
-
 /**
- * 1) if String has more than one instance of 'b' (ignoring cases), assign 10 into num
- * otherwise assign 20 into num
+ * Create abbreviation for any sentence
  * 
- * 2) print the result for:
- *      the sentence-length is greater than 20
- *      the sentence has only one instance of body (ignoring cases)
- *      the sentence starts and ends with same character which is '.'
- *      in the sentence 'said' appears before the word 'body' word
+ * 'have a great day'   ->  'HAGD'
+ * 'YOu lIVe ONlY' ->  'YLO'
+ * 'yOu neVER WaLK alOne in liFe'   ->  'YNWAIL'
+ * 'good Morning'   -> 'GM'
  * 
  */
 
-//  const sentence = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
-//  let num;
-//  console.log(`num -> ${num}`);
+// let sentence = 'have a great day';
+// let abbr = '';
+// let sentenceWords = sentence.toUpperCase().split(' ');
+
+// for (let i = 0; i <= sentenceWords.length-1 ; i++){
+//     abbr = abbr + sentenceWords[i].substring(0,1);
+// }
+// console.log(`abbr -> ${abbr}`);
 
 
-let mySentence = "HeAlTh wAs EArlIer said To Be the AbILitY of the bOdY funcTiOnInG WElL.";
+/**
+ * print the array-values in reverse order
+ * 
+ * eg:
+ * const sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
+ * 
+ * Rugby
+ * Baseball
+ * BASKETBALL
+ * Soccer
+ * Football
+ * 
+ */
 
-// let mySentenceLenght = mySentence.lenght > 20;
-
-// console.log(`\nmySentence -> ${mySentence}`);
-// console.log(`Lenght = ${mySentenceLenght}`);
-
-// let mySentenceIncludes = mySentence.includes('body');
-// console.log(`\nmySentence -> ${mySentence}`);
-// console.log(`includes = ${mySentenceIncludes}`);
-
-// let mySentenceStart = mySentence.startsWith('.') 
-// let mySentenceEnd = mySentence.endsWith('.');
-
-// console.log(`\nmySentence -> ${mySentence}`);
-// console.log(`mySentenceStartAndEnd = ${mySentenceStart}`);
-// console.log(`mySentenceStartAndEnd = ${mySentenceEnd}`);
-
-
-
+ const sports = ['Football', 'Soccer', 'BASKETBALL', 'Baseball', 'Rugby'];
+ let sportsRev = sports.reverse();
+ for (let i=0 ; i <= sportsRev.length-1 ; i++) {
+    console.log(sportsRev[i]);
+ }
