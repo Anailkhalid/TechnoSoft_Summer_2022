@@ -1,6 +1,6 @@
 /**
  * Q1:
- * Convert any sentence into Titlecase
+ * Create a function to convert any sentence into Titlecase
  * 
  * 'have a great day'   ->  'Have A Great Day'
  * 'YOu lIVe ONlY ONcE' ->  'You Live Only Once'
@@ -22,9 +22,10 @@
   console.log(titleCase("apple banana cherry"));
 
 
-  /**
+
+/**
  * Q2:
- * Reverse a String (word by word)
+ * Create a function to reverse a String (word by word)
  * 
  * 'have a great day'   ->  'day great a have'
  * 'good morning'   -> 'morning good'
@@ -33,7 +34,7 @@
  * 
  */
 
-   function reverserStr(str){
+ function reverserStr(str){
     let word = str.split(" ").reverse().join(" ");
     return word;
  }
@@ -42,26 +43,35 @@
  console.log(reverserStr("hello dear how are you doing"));
  console.log(reverserStr("Learn"));
 
+
 /**
  * Q3:
- * Find the total of numbers in the array
+ * Create a function to find the total of numbers in the array
  * 
  * [1, 2, 3, 4, 5] -> 15
  * [1, 1, 1, 2, 3, 1, 2] -> 11
  * [1, -1] -> 0
  */
 
- let arr = [1, 2, 3, 4, 5];
- let sum = 0;
- 
- for (let index = 0; index < arr.length; index++) {
-   sum += arr[index];
- }
- console.log(sum);
+ function sumArray(array) {
+    const ourArray = [1, 2, 3, 4, 5];
+    let sum = 0;
+  
+    for (let i = 0; i < ourArray.length; i += 1) {
+      sum += ourArray[i];
+    }
+    
+    return sum;
+  }
+
+  console.log(sumArray([1, 2, 3, 4, 5]));
+
+
+
 
 /**
  * Q4:
- * Find the average of the given array:
+ * Create a function to find the average of the given array:
  * 
  * avg = totalOfValues/numberOfValues
  * 
@@ -70,10 +80,19 @@
  * [1, -1] -> 0/2 -> 0
  */
 
- const arr = [1, 2, 3, 4, 5];
- let sum = 0;
- for (let number of arr) {
-     sum += number;
+
+ arry = [1, 2, 3, 4, 5];
+
+ function average(array) {
+     let total = 0;
+     let count = 0;
+ 
+     array.forEach(function(item, index) {
+         total += item;
+         count++;
+     });
+ 
+     return total / count;
  }
- average = sum / arr.length;
- console.log(average);
+ 
+ console.log(average(arry));
